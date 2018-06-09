@@ -1,0 +1,190 @@
+/* Fluendo test - Ricard Verges Martinez */
+
+/* global styles (font, colors, etc) */
+
+html body { box-sizing: border-box; color: #333; font-size: 1rem; font-family: 'Gotham Regular', Helvetica, Sans-serif; margin: 0px; padding: 0px }
+
+h1, h2, h3, h4, h5, h6 { font-family: 'Gotham Bold', Helvetica, Sans-serif; vertical-align: top }
+
+a { color: inherit; text-decoration: none; text-transform: uppercase }
+
+p, blockquote { line-height: 1.5rem }
+
+a:hover { color: #809f5c; -moz-transition: all 0.2s ease-in; -webkit-transition: all 0.2s ease-in; -o-transition: all 0.2s ease-in; transition: all 0.2s ease-in }
+
+i { font: normal normal normal 14px/1 FontAwesome !important }
+
+#fluendo-bar a:hover { color: #ff216c; -moz-transition: all 0.2s ease-in; -webkit-transition: all 0.2s ease-in; -o-transition: all 0.2s ease-in; transition: all 0.2s ease-in }
+
+nav a { padding: 0 0.5rem }
+
+section button, form button, input, select { padding: 0.6rem; border-radius: 5px; text-align: center; border: 2px solid #809f5c; font-family: 'Gotham Bold'; cursor: pointer; min-width: 100px  }
+
+input, select { margin-right: 10px; padding: 0.7rem; border: 1px solid #b7b7b7; border-radius: 2px; font-family: 'Gotham Regular', Helvetica, Sans-serif; text-align: left } 
+
+label { width: 30%; display: table-cell }
+
+/* flex boxes (layout) */
+
+section { padding: 2rem; border: 0; margin: 0; width: auto }
+
+article { text-align: center }
+
+form { font-family: 'Gotham Regular', Helvetica, Sans-serif; font-size: 0.9rem }
+
+form input, form select { width: 70% }
+
+.ui-widget-overlay { background: #000; opacity: 0.5 }
+
+.ui-widget { overflow: hidden }
+
+.lt-cell { align-self: center; -ms-flex-pack: center; padding: 2rem; box-sizing: border-box }
+
+.lt-row { display:flex; display: -ms-flexbox; min-height: 30px }
+
+.lt-row.center { justify-content: center }
+
+.lt-row.start { justify-content: flex-start }
+
+.lt-row.end { justify-content: flex-end }
+
+.lt-row.stretch { align-items: stretch }
+
+.lt-cell.start { align-self: flex-start }
+
+.lt-cell.left { text-align: left }
+
+.lt-cell.right { text-align: right }
+
+.lt-cell.middle { text-align: center }
+
+.lt-cell.end { align-self: flex-end }
+
+.lt-25 { width: 25%; flex: 0 0 auto; -ms-flex: 0 0 auto }
+
+.lt-33 { width: 33%; flex: 0 0 auto; -ms-flex: 0 0 auto }
+
+.lt-33:last-child { width: 34%; flex: 0 0 auto; -ms-flex: 0 0 auto }
+
+.lt-50 { width: 50%; flex: 0 0 auto; -ms-flex: 0 0 auto }
+
+.lt-75 { width: 75%; flex: 0 0 auto; -ms-flex: 0 0 auto }
+
+.lt-100 { width: 100%; flex: 0 0 auto; -ms-flex: 0 0 auto }
+
+/* color classes */
+
+.lt-txt-white { color: #fefefe }
+
+.lt-txt-green { color: #809f5c }
+
+.lt-txt-gray { color: #7b7b7b }
+
+.lt-bg-white { background-color: #fefefe }
+
+.lt-bg-green { background-color: #809f5c }
+
+.lt-bg-dark-gray { background-color: #333 }
+
+.lt-txt-shadow { text-shadow: 0px 3px 5px #333 }
+
+/* specific styles */
+
+#product-video { background: transparent url('../img/amunike.jpg') no-repeat center center; background-size: cover; height: 50vh; font-size: 1.5rem }
+
+#product-video i { font-size: 50px !important; vertical-align: middle }
+
+#product-video h4 { cursor: pointer; -moz-transition: all 0.2s ease-in; -webkit-transition: all 0.2s ease-in; -o-transition: all 0.2s ease-in; transition: all 0.2s ease-in } 
+
+#product-video h4:hover { transform: scale(1.2) } 
+
+#fluendo-bar { padding: 0px }
+
+#fluendo-bar article { padding: 0.5rem 2rem }
+
+#fluendo-bar img { padding-right: 1rem; vertical-align: bottom }	
+
+#fluendo-bar img, #fluendo-bar nav { display: inline-block; font-size: 0.7rem }
+
+#info-footer { padding: 0.5rem 2rem }
+
+#longomatch-bar { border-bottom: 1px solid #dedede; width: 100%; padding: 0px }
+
+#longomatch-bar nav { text-align: right }
+
+#product-plans article { border: 2px solid #809f5c; border-radius: 5px; }
+
+#product-plans article { margin-left: 2rem; }
+
+#product-features article:first-child { border-right: 1px solid #fff }
+
+#certificate { background: transparent url('../img/background-onlinecertified-section.png') no-repeat center center; background-size: cover }
+
+#certificate article { text-align: left } 
+
+#info-footer { border-top: 1px solid #7b7b7b }
+
+#info-footer #about { text-align: center; font-size: 0.7rem; line-height: 1.5rem  }
+
+#info-footer #about  a { color: #7b7b7b; text-transform: capitalize; padding: 2px }
+
+#info-footer #about a:hover { text-decoration: underline } 
+
+#product-mobile { border-bottom: 1px solid #dedede }
+
+#newsletter { background: transparent url('../img/background-app-banner.png') no-repeat center center; background-size: cover }
+
+#longomatch-bar-mobile { display: none }
+
+.productImg { height: 60px; background-size: contain }
+
+.planImg { height: 100px; background-size: contain }
+
+.featuresImg { height: 40px; background-size: contain }
+
+.mainProductImg { height: 28vh }
+
+.price { font-size: 1.1rem }
+
+.license-desc { font-size: 0.7rem }
+
+.amunike-testimonal { width: 200px; height: 200px; border-radius: 50% }
+
+.darkLongo { background-size: contain }
+
+.fa-2x { font-size: 2em !important }
+
+.form-group { width: 465px; margin-bottom: 10px; display: table }
+
+
+/* font-face (Gotham Book) */
+
+@font-face 
+{
+	font-family: 'Gotham Regular';
+	src:url('../fonts/gb-regular.otf');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face 
+{
+	font-family: 'Gotham Bold';
+	src:url('../fonts/gb-bold.otf');
+	font-weight: normal;	
+	font-style: normal;
+}
+
+/* up to ipad */
+@media screen and (max-width: 767px ) 
+{ 
+	.lt-25, .lt-33, .lt-33:last-child, .lt-50, .lt-75 { width: 100%; flex: 0 0 auto; -ms-flex: 0 0 auto } 
+	.lt-row { flex-direction: column }
+	#product-features article:first-child { border-right: 0px; border-bottom: 1px solid #fff }
+	#product-plans article { margin-left: 0rem; margin-bottom: 2rem }
+	#nav-footer { display: none }
+	#fluendo-bar { display: none }
+	#longomatch-bar-regular { display: none }
+	#longomatch-bar-mobile { display: block; position: absolute; top: 10px }
+	input { display: grid; width: 70%; margin: 0 auto; margin-bottom: 10px; }
+}
